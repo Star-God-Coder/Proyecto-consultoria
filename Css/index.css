@@ -1,163 +1,251 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 100%;
-    text-align: center;
-  }
-  @media (min-width: 700px){
-      
-  }
-  p{
-    padding-left: 10px;
-  }
-  .header {
-    background-color: #04367d;
-    color: #fff;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .header img{
-  width: 8em;
-  height: 6em;
-  }
-  .header h1 {
-    font-size: 3em;
-    margin: 0;
-  }
-  
-  .header h3 {
-    font-size: 1.2em;
-    margin: 0;
-  }
-  h2{
-    font-size: 2em;
-    text-align: center;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: #333;
+}
+
+.header {
+  background-color: #04367d;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.hero-text {
+  grid-column: 1;
+  text-align: center;
+}
+
+.hero-image {
+  grid-column: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.hero img {
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+}
+
+.introduction {
+  padding: 20px;
+  text-align: center;
+}
+
+.introduction p {
+  font-size: 1.2em;
+}
+
+.intro-img {
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.services {
+  padding: 20px;
+}
+
+.services h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.service {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.service-img {
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.service h3 {
+  font-size: 1.5em;
+  margin-top: 15px;
+}
+
+.service p {
+  font-size: 1.1em;
+  padding: 0 10px;
+}
+
+.why-us {
+  background-color: #04367d;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.why-us h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.why-us p {
+  font-size: 1.2em;
+}
+
+.call-to-action {
+  background-color: #2980b9;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-to-action a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.call-to-action .play {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.call-to-action h3 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.contact {
+  padding: 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label{
+  margin-top: 10px;
+}
+
+input,textarea{
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+button{
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #1b6391;
+}
+
+.contact-info {
+  background-color: #04367d;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.footer {
+  background-color: #04367d;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 0.8em;
+  margin: 0;
+}
+@media (min-width: 700px) {
   .hero {
-    background-color: #fff;
-    padding: 0px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
-  
-  .hero h2 {
-    font-size: 1.5em;
-  }
-  
-  .hero img {
-    width: 60%;
-    height: auto;
-  }
-  
-  .services {
-    padding-bottom: 40px;
-  }
-  
-  .service {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-    text-align: center;
-    width: 100%;
+      grid-template-columns: 1fr 1fr;
+      text-align: left;
   }
 
-  .img{
-    object-fit: cover;
-    object-position: 30% 30%;
-    width: 100%;
-    height: 200px;
+  .hero-text {
+      text-align: left;
   }
-  .service img{
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
+
+  .hero-image {
+      margin-top: 0;
   }
-  .service .img1{
-    object-position: 50% 20%;
+
+  .services-grid {
+      grid-template-columns: 1fr 1fr;
   }
-  .service h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+
+  .service-img {
+      height: 200px;
+      object-fit: cover;
   }
-  
-  .service p {
-    font-size: 1em;
-    line-height: 1.5;
+  .hero{
+    display: none;
   }
-  
-  .why-us {
-    background-color: #04367d;
-    color: #fff;
-    padding: 80px 0;
+}
+
+@media (min-width: 1000px) {
+  .services-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  
-  .why-us h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .why-us p {
-    font-size: 1em;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-  
-  .call-to-action {
-    background-color: #2980b9;
-    color: #fff;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .call-to-action h3 {
-    font-size: 1.5em;
-    margin: 0;
-    justify-content: center;
-  }
-  .play{
-    width: 30px;
-    height: 30px;
-    justify-content: center;
-  }
-  .call-to-action a{
-    color: white;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-  }
-  .contact{
-    text-align: left;
-    background-color: #04367d;
-    color: #fff;
-    padding: 20px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .contact p{
-    margin: 10px 0px;
-    color: white;
-    text-decoration: none;
-    padding: 0px;
-  }
-  .footer {
-    background-color: #04367d;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .footer p {
-    font-size: 0.8em;
-    margin: 0;
-  }
+}

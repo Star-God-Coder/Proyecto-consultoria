@@ -126,7 +126,9 @@ body {
 .why-us p {
   font-size: 1.2em;
 }
-
+.why-us a{
+  color: black;
+}
 .call-to-action {
   background-color: #2980b9;
   color: #fff;

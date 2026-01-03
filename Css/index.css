@@ -180,6 +180,7 @@ header {
 .contact {
   padding: 20px;
   text-align: center;
+  display:none;
 }
 
 .contact h2 {
@@ -275,4 +276,5 @@ button:hover {
       grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+
 

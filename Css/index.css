@@ -16,7 +16,7 @@ header {
   color: #fff;
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .header{
@@ -275,3 +275,4 @@ button:hover {
       grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+
